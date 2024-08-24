@@ -1,2 +1,71 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+// Change post fonts
+
+.post-title,
+.post-link,
+.page-heading {
+    font-family: "Grenze", sans-serif;
+    line-height: 1;
+}
+.post-title {
+    font-size: 3rem;
+}
+.post-link {
+    font-size: 2rem;
+}
+.page-heading {
+    font-size: 3rem;
+}
+
+.site-header > .wrapper {
+    font-family: "Jacquard 12", sans-serif;
+    font-size: 2rem;
+}
+.site-header > .wrapper > .site-title {
+    font-family: "Jacquard 12", sans-serif;
+    font-size: 2.5rem;
+}
+
+.site-header {
+    border-top: none;
+    border-bottom: 1px solid $border-color-01;
+}
+/////////////////////////////////////////////
+
+.main-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    background-color: transparent;
+    min-width: 25%;
+    max-width: 25%;
+    display: flex;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 3em;
+}
+.centerer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@media only screen and (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+#sidebar > h1 {
+    font-family: "Grenze", sans-serif;
+    font-size: 2em;
+}
