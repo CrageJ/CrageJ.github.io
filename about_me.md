@@ -11,4 +11,4 @@ If you have an opportunity available or would just like to talk, you can find me
 
 
 | Email    | Github   | Discord |
-| Twitter  | Leetcode | |
+| Twitter  | Leetcode |  |
