@@ -49,5 +49,8 @@ gem "sass", "3.7.4"
 gem "safe_yaml", "1.0.5"
 #gem "nokogiri", "1.16.7"
 
+#plugins:
+gem "jekyll-toc", "0.19.0"
+
 # Optional: Conditional gem
 gem "kramdown-parser-gfm", "1.1.0" if ENV["JEKYLL_VERSION"] == "~> 3.9"
