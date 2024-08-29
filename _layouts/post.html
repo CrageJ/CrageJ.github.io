@@ -44,9 +44,14 @@ layout: base
             {%- if forloop.last == false %}, {% endif -%} {% endfor %} {%- endif
             -%}
         </p>
+        {%- if page.subtitle -%}
+        <p>{{ page.subtitle }}</p>
+        {%- endif -%}
     </header>
 
     <div id="toc-post" hidden>{%- include toc.html -%}</div>
+
+    <hr />
 
     <div class="post-content e-content" itemprop="articleBody">
         {{ content }}

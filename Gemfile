@@ -54,3 +54,5 @@ gem "jekyll-toc"
 
 # Optional: Conditional gem
 gem "kramdown-parser-gfm", "1.1.0" if ENV["JEKYLL_VERSION"] == "~> 3.9"
+
+gem "jgd", "~> 1.14"
