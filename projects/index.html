@@ -34,7 +34,11 @@
 </head>
 <body><header class="site-header" style="z_index:1000">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Cragej</a><nav class="site-nav">
+  <div class="custom-wrapper"><a class="site-title" rel="author" href="/">Cragej</a>
+    <div style="height: 100%">
+        <img src="/eclipse-waxing.gif" style="height:3rem; object-fit:cover; overflow:visible;opacity:0.5">
+    </div><!--
+      <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -43,16 +47,22 @@
             </svg>
           </span>
         </label>
-
-        <div class="trigger"><a class="page-link" href="/projects/">Projects</a></div>
-      </nav></div>
+-->
+        <div > <!-- <div class="trigger"> --><a class="page-link" href="/projects/" style="color: #a6a6a6;"->Projects</a></div>
+      <!--</nav> --></div>
 </header>
 <div class="main-content" id="main-content">
         <div class="page_peripherals">
             <aside class="sidebar">
-<span id="sidebar">
-    <h1>About Me</h1>
-    <div class="content"><p>Hi, I’m Josh!</p>
+<div id="sidebar" class="about-me">
+    <img
+    class="about-me-bg"
+    src="/new.png"
+    alt=""
+    >
+    <div class="about-me-content">
+        <h1>About Me</h1>
+        <p>Hi, I’m Josh!</p>
 
 <p>I’m a software developer based in Adelaide, Australia. I’m a master’s student studying Machine Learning and AI.</p>
 
@@ -74,8 +84,10 @@
     </tr>
   </tbody>
 </table>
+
+    </div>
 </div>
-</span>
+<br>
 </aside>
             <aside class="sidebar">
 </aside>

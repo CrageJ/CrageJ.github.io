@@ -277,14 +277,14 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(800px - (30px));
+  max-width: calc(60em - (30px));
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px; }
   @media screen and (min-width: 800px) {
     .wrapper {
-      max-width: calc(800px - (30px * 2));
+      max-width: calc(60em - (30px * 2));
       padding-right: 30px;
       padding-left: 30px; } }
 
@@ -593,17 +593,28 @@ table {
 .page-heading {
   font-size: 3rem; }
 
-.site-header > .wrapper {
-  font-family: "Jacquard 12", sans-serif;
-  font-size: 2rem; }
+.about-me {
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  padding: 1.5em 2em 0em 2em;
+  background-color: #282828;
+  border-radius: 1em; }
 
-.site-header > .wrapper > .site-title {
-  font-family: "Jacquard 12", sans-serif;
-  font-size: 2.5rem; }
+.about-me-bg {
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto; }
 
-.site-header {
-  border-top: none;
-  border-bottom: 1px solid #404040; }
+.about-me-content {
+  position: relative; }
+
+.about-me-content h1 {
+  font-family: "Grenze", sans-serif;
+  font-size: 2em; }
 
 .main-content {
   position: relative;
@@ -631,14 +642,14 @@ table {
   padding: 2rem; }
 
 .page_middle {
-  width: 50rem;
+  width: 60em;
   max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 2rem;
   position: absolute; }
 
-@media (max-width: 110em) {
+@media (max-width: 114em) {
   .page_peripherals {
     display: none; }
 
@@ -659,3 +670,24 @@ tbody {
   width: 100%;
   display: table;
   overflow-x: hidden; }
+
+.site-header > .custom-wrapper > .site-title {
+  font-family: "Jacquard 12", sans-serif;
+  font-size: 2.5rem; }
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid #404040;
+  display: flex;
+  justify-content: center; }
+
+.custom-wrapper {
+  display: flex;
+  width: 30em;
+  font-family: "Jacquard 12", sans-serif;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-end; }
