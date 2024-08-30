@@ -1,5 +1,13 @@
 {% assign info = site.pages | where: "path", "about_me.md" | first %}
-<span id="sidebar">
-    <h1>{{ info.title }}</h1>
-    <div class="content">{{ info.content | markdownify }}</div>
-</span>
+<div id="sidebar" class="about-me">
+    <img
+    class="about-me-bg"
+    src="/new.png"
+    alt=""
+    >
+    <div class="about-me-content">
+        <h1>{{ info.title }}</h1>
+        {{ info.content | markdownify }}
+    </div>
+</div>
+<br>

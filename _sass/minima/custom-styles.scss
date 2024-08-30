@@ -19,20 +19,35 @@
     font-size: 3rem;
 }
 
-.site-header > .wrapper {
-    font-family: "Jacquard 12", sans-serif;
-    font-size: 2rem;
-}
-.site-header > .wrapper > .site-title {
-    font-family: "Jacquard 12", sans-serif;
-    font-size: 2.5rem;
+
+
+/////////////////////////////////////////////
+.about-me {
+    overflow:hidden;
+    position:relative;
+    opacity: 1;
+    padding: 1.5em 2em 0em 2em;
+    background-color: rgb(40,40,40);
+    border-radius: 1em;
 }
 
-.site-header {
-    border-top: none;
-    border-bottom: 1px solid $border-color-01;
+.about-me-bg {
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
-/////////////////////////////////////////////
+
+.about-me-content {
+  position: relative;
+}
+.about-me-content h1{
+    font-family: "Grenze", sans-serif;
+    font-size: 2em;
+}
+
 
 .main-content {
     position: relative;
@@ -63,7 +78,7 @@
 }
 
 .page_middle {
-    width: 50rem;
+    width: $content-width;
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -73,7 +88,7 @@
 
 // deletes abot me if the screen is small enough
 
-@media (max-width: 110em) {
+@media (max-width: 114em) {
     .page_peripherals {
         display: none;
     }
@@ -100,4 +115,33 @@ tbody {
     width: 100%;
     display: table;
     overflow-x: hidden;
+}
+
+
+
+//////////$$$$$$$$$$$$$$$$
+
+
+.site-header > .custom-wrapper > .site-title {
+    font-family: "Jacquard 12", sans-serif;
+    font-size: 2.5rem;
+}
+
+.site-header{
+    border-top: none;
+    border-bottom: 1px solid $border-color-01;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-wrapper{
+    display: flex;
+    width: min($content-width/2);
+    font-family: "Jacquard 12", sans-serif;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items:flex-end;
 }
